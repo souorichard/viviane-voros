@@ -1,3 +1,14 @@
+import { Header } from '@/components/header'
+import { AboutSection } from '@/components/sections/about-section'
+import { HeroSection } from '@/components/sections/hero-section'
+
 export default function Home() {
-  return <h1>Hello World</h1>;
+  return (
+    <main className="relative min-h-screen">
+      <Header />
+
+      <HeroSection />
+      <AboutSection />
+    </main>
+  )
 }
