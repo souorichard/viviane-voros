@@ -25,7 +25,7 @@ export function Header() {
           viviane<span className="font-bold">.voros</span>
         </a>
 
-        <nav className="flex items-center gap-8 text-background">
+        <nav className="hidden md:flex items-center gap-8 text-background">
           {nav.map((item) => {
             return (
               <NavLink key={item.href} href={item.href}>
