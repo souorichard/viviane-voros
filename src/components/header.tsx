@@ -2,8 +2,8 @@
 
 import { useScrolled } from '@/hooks/use-scrolled'
 import { cn } from '@/lib/utils'
+import { nav } from '@/mock'
 import { NavLink } from './nav-link'
-// import { HeaderItem } from './header-item'
 
 export function Header() {
   const scrolled = useScrolled()
@@ -26,12 +26,13 @@ export function Header() {
         </a>
 
         <nav className="flex items-center gap-8 text-background">
-          <NavLink href="#top">Início</NavLink>
-          <NavLink href="#about">Sobre</NavLink>
-          <NavLink href="#methodology">Metodologia</NavLink>
-          <NavLink href="#businessEnglish">Business English</NavLink>
-          {/* <NavLink href="#testimonials">Depoimentos</NavLink> */}
-          <NavLink href="#contact">Contato</NavLink>
+          {nav.map((item) => {
+            return (
+              <NavLink key={item.href} href={item.href}>
+                {item.label}
+              </NavLink>
+            )
+          })}
         </nav>
       </div>
     </header>
