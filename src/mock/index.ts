@@ -1,3 +1,6 @@
+export const whatsappLink =
+  'https://wa.me/5514981604023?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs%20particular%20e%20corporativo.'
+
 export const nav = [
   { label: 'Início', href: '#top' },
   { label: 'Sobre', href: '#about' },

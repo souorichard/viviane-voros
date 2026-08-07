@@ -1,3 +1,4 @@
+import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { AboutSection } from '@/components/sections/about-section'
 import { BusinessSection } from '@/components/sections/business-section'
@@ -17,6 +18,8 @@ export default function Home() {
       <BusinessSection />
       <DepoimentsSection />
       <ContactSection />
+
+      <Footer />
     </main>
   )
 }
