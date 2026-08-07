@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       className={`${frauncesHeading.variable} ${geistSans.variable} h-full antialiased scroll-smooth select-none`}
       suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   )
 }

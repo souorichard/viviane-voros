@@ -204,5 +204,19 @@
 }
 
 @utility animate-gentle-bounce {
-  animation: gentle-bounce 2s infinite;
+  animation: gentle-bounce 2s ease-in-out infinite;
+}
+
+@keyframes gentle-bounce-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@utility animate-gentle-bounce-down {
+  animation: gentle-bounce-down 1.8s ease-in-out infinite;
 }

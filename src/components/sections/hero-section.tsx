@@ -2,10 +2,13 @@ import Image from 'next/image'
 
 import londonHero from '@/assets/london-hero.jpg'
 import { ActionButton } from '../action-button'
+import { ScrollIndicator } from '../scroll-indicator'
 
 export function HeroSection() {
   return (
     <section id="top" className="relative isolate min-h-svh overflow-hidden">
+      <ScrollIndicator />
+
       <Image
         src={londonHero}
         alt="Vista em preto e branco da Tower Bridge e do Big Ben em Londres"
@@ -14,7 +17,7 @@ export function HeroSection() {
         className="absolute inset-0 -z-10 h-full w-full object-cover grayscale"
       />
       <div className="absolute inset-0 -z-10 bg-[oklch(0.12_0_0/0.72)]" />
-      <div className="absolute inset-x-0 bottom-0 -z-10 h-8 bg-linear-to-t from-background via-background/20 to-transparent" />
+      {/* <div className="absolute inset-x-0 bottom-0 -z-10 h-8 bg-linear-to-t from-background via-background/20 to-transparent" /> */}
 
       <div className="mx-auto grid min-h-svh max-w-368 grid-cols-1 items-end gap-10 px-6 pt-32 pb-14 lg:grid-cols-12 lg:px-10 lg:pb-20">
         <div className="lg:col-span-8">
