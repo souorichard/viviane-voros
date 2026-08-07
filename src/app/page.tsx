@@ -1,3 +1,4 @@
+import { BackToTopButton } from '@/components/back-to-top-button'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { SectionIndicator } from '@/components/section-indicator'
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main className="relative min-h-screen">
       <SectionIndicator />
+      <BackToTopButton />
 
       <Header />
 

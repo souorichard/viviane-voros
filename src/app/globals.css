@@ -192,3 +192,17 @@
     transform-origin: left;
   }
 }
+
+@keyframes gentle-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@utility animate-gentle-bounce {
+  animation: gentle-bounce 2s infinite;
+}
