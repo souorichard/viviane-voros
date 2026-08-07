@@ -13,7 +13,7 @@ export function Header() {
       className={cn(
         'fixed inset-x-0 top-0 left-0 z-50 transition-colors duration-300',
         scrolled
-          ? 'bg-foreground/60 backdrop-blur-sm shadow-md shadow-black/40'
+          ? 'bg-foreground/40 backdrop-blur-sm shadow-md shadow-black/40'
           : 'bg-transparent',
       )}
     >

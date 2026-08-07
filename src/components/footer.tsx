@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
 import { whatsappLink } from '@/mock'
 
 export function Footer() {
@@ -12,6 +13,18 @@ export function Footer() {
           className="link-underline w-fit"
         >
           WhatsApp
+        </a>
+      </div>
+
+      <div className="mx-auto max-w-368 flex items-center justify-center px-6 pb-6 text-[10px] tracking-[0.12em] text-muted-foreground/60 uppercase lg:px-10">
+        <a
+          href="https://github.com/souorichard"
+          target="_blank"
+          rel="noreferrer"
+          className="link-underline w-fit flex items-center gap-2"
+        >
+          Desenvolvido por Richard Rodrigues
+          <ArrowUpRight className="size-3" />
         </a>
       </div>
     </footer>
