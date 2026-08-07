@@ -1,5 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
-import { whatsappLink } from '@/mock'
+import { whatsappLink } from '@/utils/whatsapp-link'
 
 export function Footer() {
   return (
@@ -7,7 +7,9 @@ export function Footer() {
       <div className="mx-auto flex max-w-368 flex-col gap-2 px-6 py-8 text-xs tracking-[0.12em] text-muted-foreground uppercase sm:flex-row sm:items-center sm:justify-between lg:px-10">
         <span>Aulas de Inglês Particular &amp; Business English</span>
         <a
-          href={whatsappLink}
+          href={whatsappLink(
+            'Olá! Gostaria de saber mais sobre as aulas de inglês particular e corporativo.',
+          )}
           target="_blank"
           rel="noreferrer"
           className="link-underline w-fit"
