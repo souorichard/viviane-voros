@@ -1,6 +1,7 @@
 import { Header } from '@/components/header'
 import { AboutSection } from '@/components/sections/about-section'
 import { BusinessSection } from '@/components/sections/business-section'
+import { DepoimentsSection } from '@/components/sections/depoiments-section'
 import { HeroSection } from '@/components/sections/hero-section'
 import { MethodologySection } from '@/components/sections/methodology-section'
 
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutSection />
       <MethodologySection />
       <BusinessSection />
+      <DepoimentsSection />
     </main>
   )
 }
