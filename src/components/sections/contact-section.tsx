@@ -1,3 +1,4 @@
+import { whatsappLink } from '@/utils/whatsapp-link'
 import { ActionButton } from '../action-button'
 import { Reveal } from '../reveal'
 import { SectionLabel } from '../section-label'
@@ -21,7 +22,11 @@ export function ContactSection() {
               sobre o seu objetivo?
             </p>
             <div className="mt-10">
-              <ActionButton />
+              <ActionButton
+                href={whatsappLink(
+                  'Olá! Gostaria de saber mais sobre as aulas de inglês particular e corporativo.',
+                )}
+              />
             </div>
           </Reveal>
         </div>

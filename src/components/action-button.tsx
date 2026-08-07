@@ -3,14 +3,15 @@
 import { ArrowUpRight } from 'lucide-react'
 import type { ComponentProps } from 'react'
 import { cn } from '@/lib/utils'
-import { whatsappLink } from '@/mock'
 
 interface ActionButtonProps extends ComponentProps<'a'> {
+  href: string
   tone?: 'dark' | 'light'
   label?: string
 }
 
 export function ActionButton({
+  href,
   tone = 'dark',
   label = 'Fale comigo no WhatsApp',
   className,
@@ -18,7 +19,7 @@ export function ActionButton({
 }: ActionButtonProps) {
   return (
     <a
-      href={whatsappLink}
+      href={href}
       target="_blank"
       className={cn(
         '',

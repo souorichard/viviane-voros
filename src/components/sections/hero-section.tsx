@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import londonHero from '@/assets/london-hero.jpg'
+import { whatsappLink } from '@/utils/whatsapp-link'
 import { ActionButton } from '../action-button'
 import { ScrollIndicator } from '../scroll-indicator'
 
@@ -39,7 +40,12 @@ export function HeroSection() {
             carreira e no mundo.
           </p>
           <div className="animate-rise mt-8 [animation-delay:380ms]">
-            <ActionButton tone="light" />
+            <ActionButton
+              href={whatsappLink(
+                'Olá! Gostaria de saber mais sobre as aulas de inglês particular e corporativo.',
+              )}
+              tone="light"
+            />
           </div>
         </div>
       </div>

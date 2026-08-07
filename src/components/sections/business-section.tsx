@@ -1,4 +1,5 @@
 import { corporate } from '@/mock'
+import { whatsappLink } from '@/utils/whatsapp-link'
 import { ActionButton } from '../action-button'
 import { Reveal } from '../reveal'
 
@@ -25,6 +26,9 @@ export function BusinessSection() {
             </p>
             <div className="mt-10">
               <ActionButton
+                href={whatsappLink(
+                  'Olá! Gostaria de saber mais sobre o treinamento corporativo de Business English para minha equipe.',
+                )}
                 label="Solicitar proposta corporativa"
                 tone="light"
               />
