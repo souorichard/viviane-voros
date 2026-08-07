@@ -49,12 +49,6 @@ npm run dev
 
 Acesse `http://localhost:3000` no navegador.
 
-## Variáveis de ambiente
-
-```env
-NEXT_PUBLIC_WHATSAPP_NUMBER=5514981604023
-```
-
 ## Deploy
 
 Projeto preparado para deploy estático, hospedado na Hostinger com domínio próprio.
