@@ -1,5 +1,6 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
+import { SectionIndicator } from '@/components/section-indicator'
 import { AboutSection } from '@/components/sections/about-section'
 import { BusinessSection } from '@/components/sections/business-section'
 import { ContactSection } from '@/components/sections/contact-section'
@@ -10,6 +11,8 @@ import { MethodologySection } from '@/components/sections/methodology-section'
 export default function Home() {
   return (
     <main className="relative min-h-screen">
+      <SectionIndicator />
+
       <Header />
 
       <HeroSection />
